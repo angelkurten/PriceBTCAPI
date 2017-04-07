@@ -2,7 +2,7 @@
 
 namespace App\Oriana\Contracts;
 
-
+use Illuminate\Support\Facades\Log;
 
 class Localcoins extends BaseContract
 {
@@ -18,7 +18,7 @@ class Localcoins extends BaseContract
             session(['localcoin' => $value]);
         } catch (\Exception $e) {
             $value = session('localcoin');
-            \Log::info('Error capturado');
+            Log::info('Error capturado');
         }
 
         return $value;
