@@ -2,6 +2,7 @@
 
 namespace App\Oriana;
 
+use App\Oriana\Contracts\Bitfinex;
 use App\Oriana\Contracts\Bitstamp;
 use App\Oriana\Contracts\Cryptropay;
 use App\Oriana\Contracts\Localcoins;
@@ -10,7 +11,7 @@ use App\Oriana\Contracts\Surbtc;
 class Oriana
 {
 
-    protected $contracts = [Bitstamp::class, Localcoins::class, Cryptropay::class, /*Surbtc::class*/];
+    protected $contracts = [Bitstamp::class, Localcoins::class, Cryptropay::class, Bitfinex::class, /*Surbtc::class*/];
     protected $objs = [];
     protected $seconds = 5;
 

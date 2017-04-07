@@ -14,7 +14,7 @@
 Route::get('/', function () {
 
     $oriana = new App\Oriana\Oriana();
-    $oriana->setSeconds(20);
+    $oriana->setSeconds(2);
     return $oriana->make();
     //return view('welcome');
 });
