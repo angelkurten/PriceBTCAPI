@@ -11,7 +11,7 @@ use App\Oriana\Contracts\Surbtc;
 class Oriana
 {
 
-    protected $contracts = [Bitstamp::class, Localcoins::class, Cryptropay::class, Bitfinex::class, /*Surbtc::class*/];
+    protected $contracts = [Bitstamp::class, Localcoins::class, /*Cryptropay::class*/, Bitfinex::class, /*Surbtc::class*/];
     protected $objs = [];
     protected $seconds = 5;
 
